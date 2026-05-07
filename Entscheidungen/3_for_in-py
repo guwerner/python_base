@@ -1,0 +1,16 @@
+
+liste = ["Brot", "Milch", "Eier", "Käse"]
+
+for item in liste:
+    print(item)
+    
+wohnungspreis = [1200, 1500, 1000, 1800, 1300]
+bezahlbar = 1240
+bezahlbar_wohnungen = []
+for preis in wohnungspreis:
+    if preis < bezahlbar:
+        bezahlbar_wohnungen.append(preis)
+    else:
+        print("Diese Wohnung ist zu teuer:", preis)
+
+print("Bezahlbare Wohnungen:", bezahlbar_wohnungen)
